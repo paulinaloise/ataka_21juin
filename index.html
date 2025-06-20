@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ATAKA X FDLM</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    .container {
+      display: flex;
+      align-items: center;  /* vertically center content */
+      gap: 20px;            /* space between image and text */
+      max-width: 800px;     /* container max width */
+      margin: 20px auto;    /* center container on page */
+    }
+    .container img {
+      width: 300px;         /* fixed image width */
+      border-radius: 8px;   /* optional styling */
+      object-fit: cover;    /* keep image aspect ratio */
+    }
+    .container .text {
+      flex: 1;              /* take remaining space */
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+      .container img {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<h1>Atelier bruit-collage - Ataka X FDLM</h1>
-<p>Le 21 juin 2025, pour la Fête de la Musique à Lausanne, le collectif ataka a pris possession d'une street stage à la place Arlaud. Dans le programme proposé pour cette journée, <a href="files/ATELIER_BRUITCOLLAGE.pdf" target="_blank">l'atelier bruit-collage</a> invitait à une activité de collecte et collage de sons à partir d'objets fournis, 
-  de l'espace à disposition, et de matériel d'enregistrement. Ce site est un catalogue de la matière produite lors de cet atelier.
-  <br>
-<br> 
+  <div class="container">
+    <img src="your-image.jpg" alt="Descriptive alt text" />
+    <div class="text">
+      <p>
+        Le 21 juin 2025, pour la Fête de la Musique à Lausanne, le collectif ataka a pris possession d'une street stage à la place Arlaud. 
+        Dans le programme proposé pour cette journée, <a href="files/ATELIER_BRUITCOLLAGE.pdf" target="_blank">l'atelier bruit-collage</a> invitait à 
+        une activité de collecte et collage de sons à partir d'objets fournis, de l'espace à disposition, et de matériel d'enregistrement. 
+        Ce site est un catalogue de la matière produite lors de cet atelier.
+      </p>
+    </div>
+  </div>
 </p>
 
 <div>
