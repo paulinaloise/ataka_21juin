@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ATAKA X FDLM</title>
   <style>
+    /* Reset font to basic default */
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 20px;
+      color: black;
+    }
     .content-container {
       display: flex;
       align-items: flex-start;
@@ -16,9 +22,12 @@
       flex: 1;
       font-size: 18px;
       line-height: 1.5;
+      text-align: left;
+      margin: 0;
+      padding: 0;
     }
     .image-section img {
-      width: 150px; /* smaller image */
+      width: 150px;
       border-radius: 8px;
       object-fit: cover;
     }
@@ -31,7 +40,7 @@
       margin-bottom: 15px;
     }
 
-    /* Responsive: stack on small screens */
+    /* Responsive for small screens */
     @media (max-width: 600px) {
       .content-container {
         flex-direction: column;
