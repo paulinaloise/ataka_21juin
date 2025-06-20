@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <meta charset="UTF-8" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ATAKA X FDLM</title>
+  <style>
+    .content-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    .text-section {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .image-section img {
+      width: 150px; /* smaller image */
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .audio-section {
+      max-width: 900px;
+      margin: 30px auto 50px;
+      font-size: 16px;
+    }
+    .audio-item {
+      margin-bottom: 15px;
+    }
+
+    /* Responsive: stack on small screens */
+    @media (max-width: 600px) {
+      .content-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-section img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 15px;
+      }
+      .audio-section {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<h1>Atelier bruit-collage - Ataka X FDLM</h1>
-<p>Le 21 juin 2025, pour la Fête de la Musique à Lausanne, le collectif ataka a pris possession d'une street stage à la place Arlaud. Dans le programme proposé pour cette journée, <a href="files/ATELIER_BRUITCOLLAGE.pdf" target="_blank">l'atelier bruit-collage</a> invitait à une activité de collecte et collage de sons à partir d'objets fournis, de l'espace à disposition, et de matériel d'enregistrement. Ce site est un catalogue de la matière produite lors de cet atelier.
+  <h1>Atelier bruit-collage - Ataka X FDLM</h1>
 
-</p>
+  <div class="content-container">
+    <div class="text-section">
+      <p>
+        Le 21 juin 2025, pour la Fête de la Musique à Lausanne, le collectif ataka a pris possession d'une street stage à la place Arlaud. Dans le programme proposé pour cette journée, 
+        <a href="files/ATELIER_BRUITCOLLAGE.pdf" target="_blank">l'atelier bruit-collage</a> invitait à une activité de collecte et collage de sons à partir d'objets fournis, de l'espace à disposition, et de matériel d'enregistrement. Ce site est un catalogue de la matière produite lors de cet atelier.
+      </p>
+    </div>
+    <div class="image-section">
+      <img src="your-image.jpg" alt="Atelier image" />
+    </div>
+  </div>
 
-<div>
-  1<br>
-  <audio controls src="audios/.mp3"></audio>
-</div>
-<br>
+  <div class="audio-section">
+    <div class="audio-item">
+      1<br>
+      <audio controls src="audios/your-audio1.mp3"></audio>
+    </div>
 
-<div>
-  2<br>
-  <audio controls src="audios/.mp3"></audio>
-</div>
-<br>
+    <div class="audio-item">
+      2<br>
+      <audio controls src="audios/your-audio2.mp3"></audio>
+    </div>
+  </div>
 
 </body>
 </html>
