@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>ATAKA X FDLM</title>
   <style>
-    /* Basic side-by-side layout */
     .container {
       display: flex;
       max-width: 900px;
@@ -13,16 +12,15 @@
     }
     .text {
       flex: 1;
+      text-align: left;  /* FORCE left alignment */
     }
     .image img {
-      width: 150px;
+      width: 300px;
     }
-    /* Audio below container */
     .audio {
       max-width: 900px;
       margin: 30px auto;
     }
-    /* Responsive: stack on small screens */
     @media (max-width: 600px) {
       .container {
         flex-direction: column;
